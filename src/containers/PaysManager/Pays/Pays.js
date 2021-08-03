@@ -12,7 +12,7 @@ const Pays = (props) => (
          <div>Capitale: {props.capitale}</div>
          {
             !props.afficherLien &&
-            <NavLink to={'/pays/'+props.nomFrancais} className="nav-link">Voir la fiche pays</NavLink>
+            <NavLink to={'/pays/' + props.nomFrancais} className="nav-link">Voir la fiche pays</NavLink>
          }
       </div>
 
