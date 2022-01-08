@@ -14,7 +14,7 @@ class FichePays extends Component {
 
     componentDidMount = () => {
         this.setState({ loading: true })
-        axios.get(`https://restcountries.eu/rest/v2/name/${this.props.nomPays}?fullText=true`)
+        axios.get(`https://restcountries.com/v2/name/${this.props.nomPays}?fullText=true`)
             .then(reponse => {
                 //console.log(reponse)
                 this.setState({

@@ -20,7 +20,7 @@ class PaysManager extends Component {
         if (region === "all") param = region;
         else param = `region/${region}`
 
-        axios.get(`https://restcountries.eu/rest/v2/${param}`)
+        axios.get(`https://restcountries.com/v2/${param}`)
             .then(reponse => {
                 //console.log(reponse);
                 const listePays = reponse.data.map(pays => {
